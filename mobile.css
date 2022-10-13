@@ -1,0 +1,11 @@
+@media screen and (max-width:1239px) {
+    body{
+        background: green;
+        
+    }
+
+    .right-container{
+        display: none;
+    }
+    
+}
