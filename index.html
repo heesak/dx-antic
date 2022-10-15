@@ -18,8 +18,10 @@
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./mobile.css">
+    <script src="./scrol-reveal.js"></script>
 </head>
 <body>
+    <div class="backdrop "onclick="Addclass()"></div>
   <div class="parent-container">
     
     <div class="mobile-links">
@@ -33,7 +35,7 @@
 
     <div class="left-container">
         <div class="head">
-         <h4>antic</h4>
+         <h4 class="anime">antic</h4>
          <ul>
             <li >Products</li>
             <li >Rooms</li>
@@ -45,7 +47,7 @@
             <!-- <div class="menubar"></div> -->
          </div>
         </div>
-        <p class="home">HOME DESIGN</p>
+        <p class="home only">HOME DESIGN</p>
         <h2>Elegance for<br>
             Interiors &<br> Exteriors</h2>
 
@@ -114,6 +116,13 @@
     <input type="text" placeholder="email@address.com">
     <button>Subscribe</button></div> 
   </div>
+
+  <script>
+    ScrollReveal({ reset: true });
+    ScrollReveal().reveal('.anime', { delay: 500 });
+</script>
+
   <script src="./main.js"></script>
+
 </body>
 </html>

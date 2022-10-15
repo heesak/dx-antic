@@ -12,12 +12,13 @@
     /* position: relative; */
 }
 
+
 .left-container{
     padding: 40px 60px;
     background: var( --background-col);
     justify-content: space-between;
     width: 50%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     justify-content: center;
 }
 .parent-container .mobile-links{
@@ -27,7 +28,7 @@
     width: 50%;
     display: none;
     height: 100vh;
-    border: 3px solid tomato;
+    /* border: 3px solid tomato; */
     background: var( --ul-col);
     /* position: absolute; */
     /* background-attachment: fixed; */
@@ -36,7 +37,7 @@
 }
 /* =====hamburger starts here==== */
 .hamburger{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     z-index: 100;
     flex-direction: column;
     align-items: center;
@@ -138,16 +139,16 @@ padding: 20px 0;
 }
 .show .menubar::before{
     transform: rotate(45deg);
-    transition: 1.5s;
+    transition: 0.5s;
 }
 .show .menubar::after{
     transform: rotate(-45deg);
-    transition: 1.5s;
+    transition: 0.5s;
 }
 .lis{
     /* display: block; */
     width: 100%;
-    border: 3px solid tomato;
+    /* border: 3px solid tomato; */
     text-align: center;
     font-weight: 200;
     font-size: 30px;
@@ -175,7 +176,7 @@ li{
     top: 5rem;
     width: 55px;
     height: 55px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     border-radius: 50%;
     display: flex;
     color: white;
@@ -205,6 +206,7 @@ li{
 
 .con{
     /* border: 3px solid blue; */
+    margin: 0 auto;
     display: flex;
     /* justify-content: space-between; */
     padding: 30px 10px;
