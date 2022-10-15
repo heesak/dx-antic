@@ -3,9 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+*:focus{
+    outline: none;
+}
 .parent-container{
-    border: 3px solid tomato;
+    /* border: 3px solid tomato; */
     display: flex;
+    /* position: relative; */
 }
 
 .left-container{
@@ -16,6 +20,65 @@
     border: 2px solid green;
     justify-content: center;
 }
+.parent-container .mobile-links{
+    position: fixed;
+}
+.mobile-links{
+    width: 50%;
+    display: none;
+    height: 100vh;
+    border: 3px solid tomato;
+    background: var( --ul-col);
+    /* position: absolute; */
+    /* background-attachment: fixed; */
+    right: 0;
+    top: 0;
+}
+/* =====hamburger starts here==== */
+.hamburger{
+    border: 3px solid blue;
+    z-index: 100;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 55px;
+    display: none;
+}
+.menubar{
+    width: 90%;
+    height: 5px;
+    /* border: 3px solid white; */
+    background: var( --menu-col);
+    position: relative;
+}
+.menubar::before,
+.menubar::after{
+    content: '';
+    background: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    height: 5px;
+}
+.menubar::before{
+    transform: translateY(-15px);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.menubar::after{
+    transform: translateY(15px);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.menubar::before:focus{
+    transform: rotateX('45deg');
+}
+
 h4{
     font-weight: bolder;
     color: var( --text-col);
@@ -47,7 +110,7 @@ font-size: 22px;
     background: url(./img/header.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid  blue;
+    /* border: 2px solid  blue; */
     /* height: 700px; */
 }
 .icon{
@@ -64,19 +127,39 @@ font-size: 22px;
 
 .head{
 display: flex;
+align-items: center;
 /* justify-content: space-evenly; */
 /* width: 90%; */
-border: 3px solid yellow;
+/* border: 3px solid yellow; */
 padding: 20px 0;
 }
-
+.upper{
+    background: transparent;
+}
+.show .menubar::before{
+    transform: rotate(45deg);
+    transition: 1.5s;
+}
+.show .menubar::after{
+    transform: rotate(-45deg);
+    transition: 1.5s;
+}
+.lis{
+    /* display: block; */
+    width: 100%;
+    border: 3px solid tomato;
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+    padding: 10px;
+}
 ul{
     display: flex;
     list-style: none;
     align-items: center;
     font-size: 19px;
     color: var(--ul-col);
-    border: 3px solid grey;
+    /* border: 3px solid grey; */
     width: 90%;
     justify-content: space-evenly;
     font-family: 'Inter', sans-serif;
@@ -102,26 +185,26 @@ li{
 }
 .second-div{
     /* height: 900px; */
-    border: 2px solid tomato;
+    /* border: 2px solid rgb(255, 71, 200); */
     display: flex;
     background: var(--background-col);
 }
 
 .second-first{
     width: 50%;
-    border: 3px solid red;
+    /* border: 3px solid rgb(64, 15, 155); */
     height: 100%;
     padding: 55px 60px ;
 }
 .second-sec{
     width: 50%;
-    border: 3px solid green;
+    /* border: 3px solid green; */
     padding: 30px 20px;
     height: 100%; 
 }
 
 .con{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     display: flex;
     /* justify-content: space-between; */
     padding: 30px 10px;
@@ -136,7 +219,7 @@ padding-bottom: 20px;
 color: var(--text-col);
 }
 .write p{
-    border: 3px solid gold;
+    /* border: 3px solid gold; */
     color: var(--service-col);
 }
 .hard{
@@ -187,26 +270,38 @@ color: var(--be-awere-col);
 .holder h3{
     font-weight: 700;
 font-size: 17px;
-font-family: 'Karla';
+font-family: 'Karla', sans-serif;
 padding-right:15px;
+color: var(--text-col);
 }
 input[type=text]{
     padding: 10px 35px;
     background: var(--input-col);
     margin-right: 20px;
+    border: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 button{
-    padding: 10px;
+    padding:15px 25px;
+    background: var(--button-back-col);
+    font-weight: 700;
+    font-size: 17px;
+    color: var( --background-col);
+    border: 0;
+
 }
 .holder{
     display: flex;
     font-family: 'Karla';
     align-items: center;
+    color: var(--text-col);
     
 }
 .btn{
-    border: 3px solid greenyellow;
+    /* border: 3px solid greenyellow; */
     display: flex;
     
 }
