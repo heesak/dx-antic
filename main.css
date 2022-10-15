@@ -144,6 +144,7 @@ padding: 20px 0;
 .show .menubar::after{
     transform: rotate(-45deg);
     transition: 0.5s;
+    
 }
 .lis{
     /* display: block; */
@@ -151,9 +152,11 @@ padding: 20px 0;
     /* border: 3px solid tomato; */
     text-align: center;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 28px;
+    /* box-shadow: 5px 5px black; */
     padding: 10px;
 }
+
 ul{
     display: flex;
     list-style: none;

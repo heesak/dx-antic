@@ -4,6 +4,7 @@
         background: green;
         
     } */
+    
     .left-container{
         
         background: url(./img/header.png);
@@ -14,9 +15,17 @@
         text-align: center;
         align-items: center;
         max-width: 1305px;
+        min-width: 100%;
     }
+
     .mobile-links{
         display: none;
+        max-width: 50%;
+        
+    }
+
+    .ups{
+        padding-top: 20px;
     }
     .backdrop{
         width: 100%;
@@ -26,14 +35,14 @@
         background: rgba(255, 255, 255,0.1);
         position: fixed;
         top: 0;
-        min-width: 420px;
+        min-width: 50%;
     }
     .showlinks{
         display: flex;
     }
     .second-div,.left-container{
         margin: 0;
-        min-width: 420px;
+        min-width: 100%;
       
         max-width: 1305px;
     }
@@ -44,9 +53,10 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        padding: 30px 15px
-        /* min-width: 600px; */
+        right: 0;
+        /* width: 100%; */
+        padding: 30px 25px;
+        width:100%;
     }
     .hamburger{
         /* position: fixed; */
@@ -69,11 +79,13 @@
     }
     .mobile-ul{
         display: block;
+        /* border: 3px solid white; */
         margin-top: 130px;
        width: 100%; 
-        justify-content: center;
+       min-width: 100%;
+        /* justify-content: center; */
         color: var( --background-col);
-        flex-direction: column;
+
         /* border: 3px solid rgb(0, 255, 200); */
     }
     .right-container{
@@ -91,7 +103,7 @@
     .con{
         flex-direction: column;
         justify-content: flex-start;
-        max-width: 870px;
+        max-width: 574px;
         /* width: 100%; */
     }
     .hard{
@@ -116,10 +128,11 @@
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
-        /* width: 100%; */
     }
     input[type=text]{
         /* margin-left: 5px; */
+        width: 100%;
+
        
     }
     button{
