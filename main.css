@@ -25,15 +25,16 @@
     position: fixed;
 }
 .mobile-links{
-    width: 50%;
+    width: 100%;
     display: none;
-    height: 100vh;
+    /* height: 100vh; */
     /* border: 3px solid tomato; */
-    background: var( --ul-col);
+    background: transparent;
+    justify-content: left;
     /* position: absolute; */
     /* background-attachment: fixed; */
     right: 0;
-    top: 0;
+    top: 120px;
 }
 /* =====hamburger starts here==== */
 .hamburger{
@@ -58,7 +59,7 @@
     content: '';
     background: rgb(255, 255, 255);
     position: absolute;
-    width: 100%;
+    width: 70%;
     height: 5px;
 }
 .menubar::before{
@@ -149,22 +150,31 @@ padding: 20px 0;
 .lis{
     /* display: block; */
     width: 100%;
-    /* border: 3px solid tomato; */
-    text-align: center;
+    border: 0 solid #D9D9D9;
+    text-align: left;
+    background: #D9D9D9;
     font-weight: 200;
     font-size: 28px;
     /* box-shadow: 5px 5px black; */
     padding: 10px;
 }
+.lis:hover{
+    background: transparent;
+    border: 3px solid #D9D9D9;
+    transition: 0.5s;
+
+}
 
 ul{
     display: flex;
     list-style: none;
-    align-items: center;
-    font-size: 19px;
+    /* align-items: center;
+    font-weight: 600;
+    font-size: 25px; */
     color: var(--ul-col);
+    /* height: 100%; */
     /* border: 3px solid grey; */
-    width: 90%;
+    /* width: 90%; */
     justify-content: space-evenly;
     font-family: 'Inter', sans-serif;
 font-family: 'Varta', sans-serif;
@@ -236,6 +246,7 @@ color: var(--text-col);
 font-size: 55px;
 line-height: 60px;
 color: var(--text-col);
+word-wrap: normal;
 
 }
 

@@ -8,6 +8,7 @@
     .left-container{
         
         background: url(./img/header.png);
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
@@ -20,7 +21,7 @@
 
     .mobile-links{
         display: none;
-        max-width: 50%;
+        /* max-width: 50%; */
         
     }
 
@@ -39,6 +40,7 @@
     }
     .showlinks{
         display: flex;
+        justify-content: flex-start;
     }
     .second-div,.left-container{
         margin: 0;
@@ -78,9 +80,10 @@
         display: none;
     }
     .mobile-ul{
-        display: block;
-        /* border: 3px solid white; */
-        margin-top: 130px;
+        display: flex;
+        flex-direction: column;
+        /* border: 3px solid blue; */
+        /* margin-top: 130px; */
        width: 100%; 
        min-width: 100%;
         /* justify-content: center; */
