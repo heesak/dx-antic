@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./mobile.css">
-    <script src="./scrol-reveal.js"></script>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+   
 </head>
 <body>
     <div class="backdrop "onclick="Addclass()"></div>
@@ -117,11 +119,69 @@
     <button>Subscribe</button></div> 
   </div>
 
-  <script>
-    ScrollReveal({ reset: true });
-    ScrollReveal().reveal('.anime', { delay: 100 });
-</script>
+  <div class="pics__holder  mySwiper">
+    <div class="all__pics swiper-wrapper">
+        <div class="img-con swiper-slide"><img src="./img/slide1.png"></div>
+        <div class="img-con swiper-slide"> <img src="./img/slide2.png"></div>
+        <div class="img-con swiper-slide"><img src="./img/slide3png.png"></div>
+        <!-- <div class="img-con swiper-slide"><img src="./img/header.png"></div> -->
+       
+        
+        
+    </div>
+    <!-- <div class="swiper-pagination"></div> -->
+  </div>
 
+  <div class="container">
+
+    <h1 class="last">Inspirations</h1>
+
+    <p class="wrap">Our experts are keen to stay on top of trends in,<br> order to offer you new inspirations for your <br> and exterior every day. Remember that to <br>inspire you we have to inspire ourselves<br> and we want to share that with you.</p>
+
+    <div class="icons__holder">
+        <div class="icons"><i class="fa-solid fa-less-than "></i></div>
+        
+       <div class="icons"><i class="fa-solid fa-greater-than"></i></div>
+    </div>
+  </div>
+
+  <div class="mobile__pics">
+    <div class="chair">
+        <img src="./img/slide1.png" class="hhhhh">
+        <h4>Chair</h4>
+    </div>
+    <div class="cooked">
+        <img src="./img/slide2.png" alt="">
+        <h4>Cooked</h4>
+    </div>
+    <div class="living-room">
+        <img src="./img/slide3png.png" alt="">
+        <h4>living-room</h4>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="./reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination .icons",
+      clickable: true,
+    },
+    // when window width is >=600px
+    breakpoints:{
+        600:{
+            slidesPerView:2
+        }
+    } 
+  });
+</script>
   <script src="./main.js"></script>
 
 </body>
